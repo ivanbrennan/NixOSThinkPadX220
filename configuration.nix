@@ -43,12 +43,13 @@
   # List packages installed in system profile. To search by name, run:
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
-    git
-    vimHugeX
-    xclip
+    bashCompletion
     chromium
-    xcape
+    git
     tree
+    vimHugeX
+    xcape
+    xclip
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
