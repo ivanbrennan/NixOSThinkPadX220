@@ -105,4 +105,6 @@
   # should.
   system.stateVersion = "17.09"; # Did you read the comment?
 
+  system.autoUpgrade.enable = true;
+
 }
