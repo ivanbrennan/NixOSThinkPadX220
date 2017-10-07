@@ -45,6 +45,7 @@
   environment.systemPackages = with pkgs; [
     chromium
     git
+    pstree
     slack
     tree
     universal-ctags
