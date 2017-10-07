@@ -47,6 +47,7 @@
     chromium
     git
     tree
+    universal-ctags
     vimHugeX
     xcape
     xclip
