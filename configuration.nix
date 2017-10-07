@@ -45,6 +45,7 @@
   environment.systemPackages = with pkgs; [
     chromium
     git
+    mkpasswd
     par
     pstree
     slack
@@ -114,7 +115,9 @@
     createHome = true;
     home = "/home/ivan";
     extraGroups = [ "wheel" "networkmanager" ];
+    hashedPassword = "$6$WkpnVqs.$w7ssbDvpNB2yaetz83gNCGadcykUJMUL1yDLjmnuviU3mxWTGMfAJ0p88n7bNtd.MFlObMawgmALsVOBSPPXT.";
   };
+  users.mutableUsers = false;
 
   # This value determines the NixOS release with which your system is to be
   # compatible, in order to avoid breaking some software such as database
