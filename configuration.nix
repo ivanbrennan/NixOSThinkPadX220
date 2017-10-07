@@ -47,6 +47,7 @@
     git
     pstree
     slack
+    tmux
     tree
     universal-ctags
     vimHugeX
