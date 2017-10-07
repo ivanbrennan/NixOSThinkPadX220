@@ -58,6 +58,8 @@
   # programs.mtr.enable = true;
   # programs.gnupg.agent = { enable = true; enableSSHSupport = true; };
 
+  fonts.fonts = [ pkgs.source-code-pro ];
+
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
