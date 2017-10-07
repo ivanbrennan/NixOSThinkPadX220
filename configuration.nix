@@ -91,7 +91,15 @@
 
   # Gnome desktop
   services.xserver.desktopManager = {
-    gnome3.enable = true;
+    gnome3 = {
+      enable = true;
+
+      # Figure out why this isn't working
+      # extraGSettingsOverrides = ''
+      #   [org.gnome.desktop.interface]
+      #   gtk-key-theme="Emacs"
+      # '';
+    };
     default = "gnome3";
   };
 
