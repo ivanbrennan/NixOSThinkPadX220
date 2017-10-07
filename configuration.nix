@@ -45,12 +45,15 @@
   environment.systemPackages = with pkgs; [
     chromium
     git
+    slack
     tree
     universal-ctags
     vimHugeX
     xcape
     xclip
   ];
+
+  nixpkgs.config.allowUnfree = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
