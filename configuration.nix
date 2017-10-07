@@ -45,6 +45,7 @@
   environment.systemPackages = with pkgs; [
     chromium
     git
+    par
     pstree
     slack
     tmux
