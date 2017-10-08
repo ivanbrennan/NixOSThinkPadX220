@@ -77,6 +77,7 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
+  services.emacs.enable = true;
   # services.openssh.enable = true;
 
   # Open ports in the firewall.
