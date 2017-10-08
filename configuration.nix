@@ -44,7 +44,9 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     chromium
+    emacs
     git
+    global
     lshw
     mkpasswd
     par
@@ -67,7 +69,10 @@
   # programs.mtr.enable = true;
   # programs.gnupg.agent = { enable = true; enableSSHSupport = true; };
 
-  fonts.fonts = [ pkgs.source-code-pro ];
+  fonts.fonts = [
+    pkgs.source-code-pro
+    pkgs.emacs-all-the-icons-fonts
+  ];
 
   # List services that you want to enable:
 
