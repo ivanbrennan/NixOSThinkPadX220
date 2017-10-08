@@ -45,6 +45,7 @@
   environment.systemPackages = with pkgs; [
     chromium
     git
+    lshw
     mkpasswd
     par
     pstree
