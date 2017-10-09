@@ -66,6 +66,9 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  nix.gc.automatic = true;
+  nix.gc.dates = "03:15";
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   programs.bash.enableCompletion = true;
