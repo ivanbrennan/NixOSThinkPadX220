@@ -97,8 +97,13 @@
   services.xserver.layout = "us";
   services.xserver.xkbOptions = "caps:none,shift:both_capslock,caps:ctrl_modifier";
 
+  # Better 3D performance than the X.org drivers
+  # services.xserver.videoDrivers = [ "nvidia" ];
+
   # Enable touchpad support.
-  # services.xserver.libinput.enable = true;
+  # services.xserver.libinput.enable = false;
+  # services.xserver.synaptics.enable = true;
+  # services.xserver.synaptics.twoFingerScroll = true;
 
   # Enable the KDE Desktop Environment.
   # services.xserver.displayManager.sddm.enable = true;
