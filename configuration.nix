@@ -60,6 +60,7 @@
     universal-ctags
     vimHugeX
     vlc
+    weechat
     xcape
     xclip
   ];
