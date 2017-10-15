@@ -98,7 +98,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
   services.xserver.layout = "us";
-  services.xserver.xkbOptions = "caps:none,shift:both_capslock,caps:ctrl_modifier";
+  services.xserver.xkbOptions = "shift:both_capslock,caps:ctrl_modifier";
 
   # Better 3D performance than the X.org drivers
   # services.xserver.videoDrivers = [ "nvidia" ];
