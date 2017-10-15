@@ -52,6 +52,7 @@
     global
     lshw
     mkpasswd
+    nix-repl
     par
     pstree
     slack
