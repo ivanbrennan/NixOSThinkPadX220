@@ -46,6 +46,7 @@
     aspell
     aspellDicts.en
     chromium
+    conky
     emacs
     ghc
     git
