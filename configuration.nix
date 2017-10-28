@@ -43,6 +43,7 @@
   # $ nix-env -qaP | grep wget
   environment.systemPackages = with pkgs; [
     ag
+    alacritty
     aspell
     aspellDicts.en
     chromium
