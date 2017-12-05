@@ -10,6 +10,10 @@
       ./hardware-configuration.nix
     ];
 
+  boot.loader.grub.enable = true;
+  boot.loader.grub.version = 2;
+  boot.loader.grub.device = "/dev/sda";
+
   boot.initrd.luks.devices = [
     {
       name = "root";
@@ -17,11 +21,6 @@
       preLVM = true;
     }
   ];
-
-  # Use the GRUB 2 boot loader.
-  boot.loader.grub.enable = true;
-  boot.loader.grub.version = 2;
-  boot.loader.grub.device = "/dev/sda";
 
   networking.hostName = "littleThinkPad";
 
