@@ -76,6 +76,11 @@
   services.xserver.layout = "us";
   services.xserver.xkbOptions = "shift:both_capslock,caps:ctrl_modifier";
 
+  services.xserver.displayManager.sessionCommands = ''
+    # tap caps to escape
+    xcape -e 'Caps_Lock=Escape' &
+  '';
+
   # Gnome desktop
   services.xserver.desktopManager = {
     gnome3 = {
