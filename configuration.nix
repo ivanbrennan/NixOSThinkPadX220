@@ -1,12 +1,11 @@
-# Edit this configuration file to define what should be installed on
-# your system.  Help is available in the configuration.nix(5) man page
-# and in the NixOS manual (accessible by running ‘nixos-help’).
+# For help, see ‘man configuration.nix’ and ‘nixos-help’.
 
 { config, pkgs, ... }:
 
 {
   imports =
-    [ # Include the results of the hardware scan.
+    [
+      ./environment/default.nix
       ./hardware-configuration.nix
     ];
 
@@ -31,33 +30,7 @@
 
   time.timeZone = "America/New_York";
 
-  environment.systemPackages = with pkgs; [
-    ag
-    alacritty
-    aspell
-    aspellDicts.en
-    chromium
-    conky
-    emacs
-    ghc
-    git
-    global
-    lshw
-    mkpasswd
-    nix-repl
-    par
-    pstree
-    slack
-    stack
-    tmux
-    tree
-    universal-ctags
-    vimHugeX
-    vlc
-    weechat
-    xcape
-    xclip
-  ];
+  virtualisation.docker.enable = true;
 
   nixpkgs.config.allowUnfree = true;
 
