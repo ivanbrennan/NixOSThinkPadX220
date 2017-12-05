@@ -62,9 +62,6 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  nix.gc.automatic = true;
-  nix.gc.dates = "03:15";
-
   programs.bash.enableCompletion = true;
 
   fonts.fonts = [
@@ -103,11 +100,14 @@
   };
   users.mutableUsers = false;
 
+  nix.gc.automatic = true;
+  nix.gc.dates = "03:15";
+
+  system.autoUpgrade.enable = true;
+
   # This value determines the NixOS release with which your system is to be
   # compatible, in order to avoid breaking some software such as database
   # servers. You should change this only after NixOS release notes say you
   # should.
   system.stateVersion = "17.09"; # Did you read the comment?
-
-  system.autoUpgrade.enable = true;
 }
