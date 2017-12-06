@@ -4,27 +4,16 @@
 
 {
   imports =
-    [
+    [ # symlink ./machines/HOSTNAME.nix
+      # sudo ln -sr /etc/nixos/machines/{HOSTNAME/default,self}.nix
+      ./machines/self.nix
+
+      # shared
       ./environment/default.nix
-      ./hardware-configuration.nix
       ./programs/default.nix
       ./services/default.nix
       ./users/default.nix
     ];
-
-  boot.loader.grub.enable = true;
-  boot.loader.grub.version = 2;
-  boot.loader.grub.device = "/dev/sda";
-
-  boot.initrd.luks.devices = [
-    {
-      name = "root";
-      device = "/dev/sda2";
-      preLVM = true;
-    }
-  ];
-
-  networking.hostName = "littleThinkPad";
 
   i18n = {
     consoleKeyMap = "us";
