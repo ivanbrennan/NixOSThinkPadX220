@@ -11,6 +11,7 @@ let
 in
 
 ''
+  runtime vimrc-before.vim
   ${vimrc}
   ${keybindings}
   ${autocmd}
@@ -20,4 +21,5 @@ in
   ${options}
   ${terminal}
   ${wild}
+  runtime vimrc-after.vim
 ''
