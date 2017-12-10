@@ -1,6 +1,7 @@
 let
   vimrc = builtins.readFile ./vimrc;
   autocmd = builtins.readFile ./autocmd.vim;
+  cursor = builtins.readFile ./cursor.vim;
   filetype = builtins.readFile ./filetype.vim;
   functions = builtins.readFile ./functions.vim;
   keybindings = builtins.readFile ./keybindings.vim;
@@ -14,10 +15,11 @@ in
 ''
   runtime vimrc-before.vim
   ${vimrc}
-  ${keybindings}
   ${autocmd}
+  ${cursor}
   ${filetype}
   ${functions}
+  ${keybindings}
   ${netrw}
   ${options}
   ${statusline}
