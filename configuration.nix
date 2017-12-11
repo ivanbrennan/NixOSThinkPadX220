@@ -24,7 +24,10 @@
 
   virtualisation.docker.enable = true;
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs.config = {
+    allowUnfree = true;
+    packageOverrides = (import ./package-overrides);
+  };
 
   fonts.fonts = [
     pkgs.source-code-pro
