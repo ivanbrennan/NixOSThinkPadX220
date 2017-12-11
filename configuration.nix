@@ -9,10 +9,10 @@
       ./machines/self.nix
 
       # shared
-      ./environment/default.nix
-      ./programs/default.nix
-      ./services/default.nix
-      ./users/default.nix
+      ./environment
+      ./programs
+      ./services
+      ./users
     ];
 
   i18n = {
