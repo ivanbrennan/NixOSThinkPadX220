@@ -19,6 +19,7 @@ let
     par
     pstree
     slack
+    sqliteInteractive
     stack
     tmux
     tree
