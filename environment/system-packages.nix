@@ -2,6 +2,7 @@ pkgs:
 
 let
   packages = with pkgs; [
+    abcde
     ag
     alacritty
     aspell
@@ -11,6 +12,7 @@ let
     dmidecode
     docker
     emacs
+    flac
     git
     global
     lshw
